@@ -26,10 +26,9 @@ public class MovieViewHolder extends RecyclerView.ViewHolder {
     public void bindData(MovieDetail movieDetail) {
         String backdropPath = movieDetail.getBackdrop_path();
         String baseUrl = HttpClient.getInstance().getImageBaseUrl();
-        baseUrl = baseUrl.substring(0,baseUrl.length()-1);
 
 
-        Uri uri = Uri.parse(baseUrl + backdropPath);
+        Uri uri = Uri.parse(baseUrl + "w500" + backdropPath);
         draweeView.setImageURI(uri);
         movieName.setText(movieDetail.getTitle());
 
