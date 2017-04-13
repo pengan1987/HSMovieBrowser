@@ -13,6 +13,7 @@ import com.andyzhou.hsmoviebrowser.api.HttpClient;
 import com.andyzhou.hsmoviebrowser.models.ApiConfiguration;
 import com.andyzhou.hsmoviebrowser.models.MovieDetail;
 import com.andyzhou.hsmoviebrowser.models.MovieRequest;
+import com.facebook.drawee.backends.pipeline.Fresco;
 
 import java.util.List;
 
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Fresco.initialize(this);
         setContentView(R.layout.activity_main);
         mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         mSearchButton = (Button) findViewById(R.id.btnSearch);
