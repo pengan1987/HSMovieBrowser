@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HSMovieBrowser</string>
+    <string name="search">Search</string>
+    <string name="enter_movie_name_here">Enter movie name here</string>
+</resources>
